@@ -1,4 +1,4 @@
-import UpSide from "./components/UpSide/UpSide";
+// import UpSide from "./components/UpSide/UpSide";
 import LeftMenu from "./components/LeftMenu/LeftMenu";
 
 const App = () => {

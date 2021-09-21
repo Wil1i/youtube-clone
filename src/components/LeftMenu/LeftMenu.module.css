@@ -6,10 +6,11 @@
   height: 100vh;
   overflow: scroll;
   width: 240px;
+  transition: width 0.3s ease-in-out;
 }
 
 #fixMenu {
-  margin-top: 50px;
+  margin-top: 60px;
   display: block;
 }
 
@@ -29,6 +30,14 @@
   cursor: pointer;
   float: left;
   margin: 25px;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+#hamburgerIcon:active {
+  background-color: #323232;
+  border: 1px solid #383838;
+  padding: 15px;
 }
 
 #youtubeIcon {
@@ -149,6 +158,31 @@
 
 .BOYIcon {
   border-radius: 25px;
+}
+
+#closedHamburger {
+  display: none;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#closedHamburger > li {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+#closedHamburger > li:hover {
+  background-color: #373737;
+  cursor: pointer;
+}
+
+#closedHamburger > li > p {
+  font-size: 10px;
+  margin-top: 10px;
 }
 
 ::-webkit-scrollbar {

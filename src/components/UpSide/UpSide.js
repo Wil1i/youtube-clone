@@ -18,9 +18,9 @@ const UpSide = () => {
         <li className="up-side-sub">
           <div>
             <input placeholder="Search"></input>
-            <img src={imageURL["search-icon"]} />
+            <img src={imageURL["search-icon"]} alt="Search Icon" />
           </div>
-          <img src={imageURL["voice-icon"]} />
+          <img src={imageURL["voice-icon"]} alt="Voice Icon" />
         </li>
         <li className="up-side-sub"></li>
       </ul>

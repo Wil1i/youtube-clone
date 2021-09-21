@@ -50,10 +50,12 @@ const imageURL = {
 };
 
 const LeftMenu = () => {
+  let isHamburgerOpen = true;
+
   const showMoreHandler = () => {
     const showText = document.getElementById("showMoreText");
     const showImage = document.getElementById("showMoreImg");
-    var isShowing = showText.innerHTML == "Show fewer";
+    var isShowing = showText.innerHTML === "Show fewer";
     if (isShowing) {
       showText.innerHTML = "Show more";
       showImage.style.transform = "rotate(0)";
@@ -63,7 +65,40 @@ const LeftMenu = () => {
     }
   };
 
-  const menuHandler = () => {};
+  const menuHandler = () => {
+    const leftSide = document.getElementById(styles.leftMenu);
+    const signinLeft = document.getElementById("signinLeftMenu_000");
+    const closedHamburger = document.getElementById(styles.closedHamburger);
+    console.log(signinLeft);
+    if (isHamburgerOpen) {
+      const childs = leftSide.getElementsByTagName("ul");
+      for (const tag of childs) {
+        tag.style.display = "none";
+      }
+
+      signinLeft.style.display = "none";
+      closedHamburger.style.display = "flex";
+
+      leftSide.style.overflow = "auto";
+      leftSide.style.width = "80px";
+
+      isHamburgerOpen = false;
+    } else {
+      leftSide.style.width = "240px";
+      leftSide.style.overflow = "scroll";
+
+      setTimeout(() => {
+        closedHamburger.style.display = "none";
+        const childs = leftSide.getElementsByTagName("ul");
+        signinLeft.style.display = "flex";
+        for (const tag of childs) {
+          tag.style.display = "block";
+        }
+      }, 300);
+
+      isHamburgerOpen = true;
+    }
+  };
 
   return (
     <div id={styles.leftMenu}>
@@ -72,9 +107,10 @@ const LeftMenu = () => {
           src={imageURL["hamburger-icon"]}
           id={styles.hamburgerIcon}
           onClick={menuHandler}
+          alt="Hamburger Menu"
         />
         <a href="./" id={styles.youtubeIcon}>
-          <img src={imageURL["youtube-icon"]} />
+          <img src={imageURL["youtube-icon"]} alt="YouTube Icon" />
           <p>YouTube</p>
         </a>
       </div>
@@ -82,19 +118,19 @@ const LeftMenu = () => {
       <ul className={styles.subMenu}>
         <li className={styles.subMenuItem} id={styles.active}>
           <div>
-            <img src={imageURL["home-icon"]} />
+            <img src={imageURL["home-icon"]} alt="Home Icon" />
             <p>Home</p>
           </div>
         </li>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["explore-icon"]} />
+            <img src={imageURL["explore-icon"]} alt="Explore Icon" />
             <p>Explore</p>
           </div>
         </li>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["subscription-icon"]} />
+            <img src={imageURL["subscription-icon"]} alt="Subscription Icon" />
             <p>Subscriptions</p>
           </div>
         </li>
@@ -102,13 +138,13 @@ const LeftMenu = () => {
       <ul className={styles.subMenu}>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["library-icon"]} />
+            <img src={imageURL["library-icon"]} alt="Library Icon" />
             <p>Library</p>
           </div>
         </li>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["history-icon"]} />
+            <img src={imageURL["history-icon"]} alt="History Icon" />
             <p>History</p>
           </div>
         </li>
@@ -118,18 +154,19 @@ const LeftMenu = () => {
               src={imageURL["showMore-icon"]}
               id="showMoreImg"
               className={styles.arrow}
+              alt="Show-More Icon"
             />
             <p id="showMoreText">Show more</p>
           </div>
         </li>
       </ul>
-      <div className={styles.signinBox}>
+      <div className={styles.signinBox} id="signinLeftMenu_000">
         <div>
           <p className={styles.signinText}>
             Sign in to like videos, comment, and subscribe.
           </p>
           <button className={styles.signinButton}>
-            <img src={imageURL["signin-icon"]} />
+            <img src={imageURL["signin-icon"]} alt="Signin Icon" />
             sign in
           </button>
         </div>
@@ -138,49 +175,77 @@ const LeftMenu = () => {
         <p className={styles.subMenuTitle}>best of youtube</p>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["music-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["music-icon"]}
+              className={styles.BOYIcon}
+              alt="Music Icon"
+            />
             <p>Music</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["cup-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["cup-icon"]}
+              className={styles.BOYIcon}
+              alt="Cup Icon for sports"
+            />
             <p>Sports</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["loveGame-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["loveGame-icon"]}
+              className={styles.BOYIcon}
+              alt="LoveGame Icon"
+            />
             <p>Gaming</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["movies-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["movies-icon"]}
+              className={styles.BOYIcon}
+              alt="Movies Icon"
+            />
             <p>movies</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["news-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["news-icon"]}
+              className={styles.BOYIcon}
+              alt="News Icon"
+            />
             <p>news</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["live-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["live-icon"]}
+              className={styles.BOYIcon}
+              alt="Live Icon"
+            />
             <p>live</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["360-icon"]} className={styles.BOYIcon} />
+            <img
+              src={imageURL["360-icon"]}
+              className={styles.BOYIcon}
+              alt="VR Icon"
+            />
             <p>360° Video</p>
           </div>
         </li>
@@ -188,7 +253,10 @@ const LeftMenu = () => {
       <ul className={styles.subMenu}>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["browseChannels-icon"]} />
+            <img
+              src={imageURL["browseChannels-icon"]}
+              alt="Browse Channels Icon"
+            />
             <p>Browse Channels</p>
           </div>
         </li>
@@ -197,14 +265,17 @@ const LeftMenu = () => {
         <p className={styles.subMenuTitle}>more from youtube</p>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["youtube-min-icon"]} />
+            <img src={imageURL["youtube-min-icon"]} alt="YouTube Mini Icon" />
             <p>YouTube Premium</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["live-transparent-icon"]} />
+            <img
+              src={imageURL["live-transparent-icon"]}
+              alt="Live Transparent Icon"
+            />
             <p>Live</p>
           </div>
         </li>
@@ -213,28 +284,55 @@ const LeftMenu = () => {
       <ul className={styles.subMenu}>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["setting-icon"]} />
+            <img src={imageURL["setting-icon"]} alt="Setting Icon" />
             <p>setting</p>
           </div>
         </li>
 
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["flag-icon"]} />
+            <img src={imageURL["flag-icon"]} alt="Flag Icon for report" />
             <p>Report history</p>
           </div>
         </li>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["help-icon"]} />
+            <img src={imageURL["help-icon"]} alt="Help Icon" />
             <p>help</p>
           </div>
         </li>
         <li className={styles.subMenuItem}>
           <div>
-            <img src={imageURL["feedback-icon"]} />
+            <img src={imageURL["feedback-icon"]} alt="FeedBack Icon" />
             <p>feedback icon</p>
           </div>
+        </li>
+      </ul>
+
+      <ul id={styles.closedHamburger}>
+        <li>
+          <img src={imageURL["home-icon"]} alt="Home Icon" />
+          <p>Home</p>
+        </li>
+
+        <li>
+          <img src={imageURL["explore-icon"]} alt="Explore Icon" />
+          <p>Explore</p>
+        </li>
+
+        <li>
+          <img src={imageURL["subscription-icon"]} alt="Subscription Icon" />
+          <p>Subscriptions</p>
+        </li>
+
+        <li>
+          <img src={imageURL["library-icon"]} alt="Library Icon" />
+          <p>Library</p>
+        </li>
+
+        <li>
+          <img src={imageURL["history-icon"]} alt="History Icon" />
+          <p>History</p>
         </li>
       </ul>
     </div>
