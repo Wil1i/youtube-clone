@@ -82,6 +82,11 @@ const LeftMenu = () => {
       leftSide.style.overflow = "auto";
       leftSide.style.width = "80px";
 
+      const closedChilds = closedHamburger.getElementsByTagName("li");
+      for (const tag of closedChilds) {
+        tag.style.display = "flex";
+      }
+
       isHamburgerOpen = false;
     } else {
       leftSide.style.width = "240px";
@@ -93,6 +98,11 @@ const LeftMenu = () => {
         signinLeft.style.display = "flex";
         for (const tag of childs) {
           tag.style.display = "block";
+        }
+
+        const closedChilds = closedHamburger.getElementsByTagName("li");
+        for (const tag of closedChilds) {
+          tag.style.display = "none";
         }
       }, 300);
 

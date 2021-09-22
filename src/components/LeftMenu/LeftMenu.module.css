@@ -7,6 +7,7 @@
   overflow: scroll;
   width: 240px;
   transition: width 0.3s ease-in-out;
+  position: fixed;
 }
 
 #fixMenu {
@@ -19,10 +20,10 @@
   display: flex;
   align-items: center;
   float: left;
-  width: 100%;
+  width: 240px;
   position: fixed;
   background-color: #202020;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #hamburgerIcon {
@@ -133,6 +134,7 @@
 
 .signinButton > img {
   margin-right: 5px;
+  width: 30px;
 }
 
 .signinButton {
@@ -173,11 +175,16 @@
   padding: 10px 0;
   align-items: center;
   flex-direction: column;
+  user-select: none;
+  cursor: pointer;
 }
 
 #closedHamburger > li:hover {
   background-color: #373737;
-  cursor: pointer;
+}
+
+#closedHamburger > li:active {
+  background-color: #404040;
 }
 
 #closedHamburger > li > p {

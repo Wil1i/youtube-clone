@@ -1,0 +1,67 @@
+#videoShower {
+  max-width: 82%;
+  margin-top: 20px;
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#videoShower > ul {
+  float: left;
+}
+
+.video {
+  float: left;
+  margin-right: 15px;
+}
+
+.video > a {
+  padding: 5px;
+}
+
+.videoThumbnail {
+  width: 360px;
+  display: block;
+}
+
+.videoChannelAvatar {
+  float: left;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.videoInformationDiv {
+  margin-top: 10px;
+  height: 50px;
+}
+
+.videoView::after {
+  content: "•";
+  margin: 0 5px;
+}
+
+.videoInformation > li {
+  color: #a9a9a9;
+  float: left;
+  font-size: 14px;
+}
+
+.videoChannelName > a {
+  color: #a9a9a9;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.videoChannelName > a:hover {
+  color: white;
+}
+
+.channelAvatarSupport {
+  width: 40px;
+  float: left;
+  height: 100%;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  display: block;
+}

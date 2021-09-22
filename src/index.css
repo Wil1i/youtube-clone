@@ -9,14 +9,14 @@ body {
   background: #181818;
 }
 
-img {
-  max-width: 30px;
-}
-
 a {
   text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
