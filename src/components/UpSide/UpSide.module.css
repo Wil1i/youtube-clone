@@ -97,3 +97,19 @@
   width: 20px;
   user-select: none;
 }
+
+#searchVoiceIcon {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#searchVoiceIcon > img {
+  width: 13px;
+  padding: 10px 15px;
+  background-color: #161616;
+  border-radius: 25px;
+}

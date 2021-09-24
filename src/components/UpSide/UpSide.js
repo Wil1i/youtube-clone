@@ -45,6 +45,9 @@ const UpSide = () => {
         <div id={styles.searchIcon} title="Search">
           <img src={imageURL["search-icon"]} alt="Search Icon" />
         </div>
+        <div id={styles.searchVoiceIcon} title="Search with Voice">
+          <img src={imageURL["voice-icon"]} alt="Voice Icon" />
+        </div>
       </div>
     </div>
   );
