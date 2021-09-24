@@ -87,6 +87,8 @@ const LeftMenu = () => {
         tag.style.display = "flex";
       }
 
+      document.getElementById("Videos_videoShower__284lY").style.maxWidth =
+        "88%";
       isHamburgerOpen = false;
     } else {
       leftSide.style.width = "240px";
@@ -106,6 +108,8 @@ const LeftMenu = () => {
         }
       }, 300);
 
+      document.getElementById("Videos_videoShower__284lY").style.maxWidth =
+        "82%";
       isHamburgerOpen = true;
     }
   };

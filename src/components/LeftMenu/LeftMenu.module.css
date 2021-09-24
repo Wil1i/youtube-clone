@@ -179,6 +179,10 @@
   cursor: pointer;
 }
 
+#closedHamburger > li > img {
+  width: 30px;
+}
+
 #closedHamburger > li:hover {
   background-color: #373737;
 }
