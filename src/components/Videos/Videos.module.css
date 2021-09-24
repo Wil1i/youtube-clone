@@ -4,6 +4,7 @@
   float: right;
   display: flex;
   justify-content: flex-start;
+  transition: max-width 0.3s ease-in-out;
 }
 
 #videoShower > ul {
