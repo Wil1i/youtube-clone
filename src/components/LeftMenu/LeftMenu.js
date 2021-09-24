@@ -20,19 +20,19 @@ const imageURL = {
   "signin-icon":
     "https://cdn.discordapp.com/attachments/832316191309430835/889719207510560768/SignIn_Icon.png",
   "music-icon":
-    "https://yt3.ggpht.com/IRe9GhidmsIYK3sfAU50dUApa5YFvN2C9PyqZd_nNytpGteFHjGMl2k_Hu5C2YJ0xqcLZrbfMw=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924300742311997/channels4_profile.jpg",
   "cup-icon":
-    "https://yt3.ggpht.com/HIz__YctiR1UDbWxNPpQTaulelfwgnaORLR300HX7XnFIahGzUd0F9-zYOrKukoAu0rvVbWvng=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924301933482014/cup.jpg",
   "loveGame-icon":
-    "https://yt3.ggpht.com/4BP4S6EvNPKIIsne8Tq32rjRbMO-ZjQ6DItUbbZ5jAbPv_3tdAZOAMGSP4ALNQBnhWtK3wn7FcU=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924303355355166/LoveGame.jpg",
   "movies-icon":
-    "https://yt3.ggpht.com/6lo97rUTO7xhIBXZqLiaW2kA_eMBIEmqc27EqlKLyE4nAY-yzcKBG0Hs0YdUka3gJ629HcwgyzQ=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924305133740042/Movie.jpg",
   "news-icon":
-    "https://yt3.ggpht.com/xY-iZkAGrcD6-pO6g1GSIGemh0U1lr2ZuZDj6t87YExIP6G0lUWOgIEJ6NyJuAy7lefGLgCGwg=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924305825816617/News.jpg",
   "live-icon":
-    "https://yt3.ggpht.com/8D6JlsnvwDZFMdcbjqVji82kggP3aXXbO-yBD0RFrKlp4G1zNt9wcqcVTSPnAI8GuUAbDYQwsg=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924307163779132/Live.jpg",
   "360-icon":
-    "https://yt3.ggpht.com/KYGaP099oSulAMvSlpilxDmeiVAr2m3mE3huO7geFXsH_5HQ1xGd5YWw1Bq49eorLXi7JXwWkg=s88-c-k-c0x00ffffff-no-rj",
+    "https://cdn.discordapp.com/attachments/832316191309430835/890924300276731904/360.jpg",
   "browseChannels-icon":
     "https://cdn.discordapp.com/attachments/832316191309430835/889771163000115220/browserChannels-icon.png",
   "youtube-min-icon":

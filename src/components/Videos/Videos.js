@@ -8,7 +8,7 @@ const Videos = () => {
       video: {
         title: "آموزش ساخت بات دیسکورد | Discord.JS Tutorial",
         thumbnail:
-          "https://i.ytimg.com/vi/93bI927as_U/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI7CNGy2Lcx6mWczKqI9NrotMWXw",
+          "https://cdn.discordapp.com/attachments/832316191309430835/890923510665465876/s.png",
         views: "1K",
         publishTime: "2 hours ago",
         url: "https://www.youtube.com/watch?v=93bI927as_U",
@@ -25,7 +25,7 @@ const Videos = () => {
       video: {
         title: "آموزش ساخت بات دیسکورد | Discord.JS Tutorial",
         thumbnail:
-          "https://i.ytimg.com/vi/93bI927as_U/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI7CNGy2Lcx6mWczKqI9NrotMWXw",
+          "https://cdn.discordapp.com/attachments/832316191309430835/890923510665465876/s.png",
         views: "1K",
         publishTime: "2 hours ago",
         url: "https://www.youtube.com/watch?v=93bI927as_U",
@@ -42,7 +42,7 @@ const Videos = () => {
       video: {
         title: "آموزش ساخت بات دیسکورد | Discord.JS Tutorial",
         thumbnail:
-          "https://i.ytimg.com/vi/93bI927as_U/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI7CNGy2Lcx6mWczKqI9NrotMWXw",
+          "https://cdn.discordapp.com/attachments/832316191309430835/890923510665465876/s.png",
         views: "1K",
         publishTime: "2 hours ago",
         url: "https://www.youtube.com/watch?v=93bI927as_U",
@@ -59,7 +59,7 @@ const Videos = () => {
       video: {
         title: "آموزش ساخت بات دیسکورد | Discord.JS Tutorial",
         thumbnail:
-          "https://i.ytimg.com/vi/93bI927as_U/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI7CNGy2Lcx6mWczKqI9NrotMWXw",
+          "https://cdn.discordapp.com/attachments/832316191309430835/890923510665465876/s.png",
         views: "1K",
         publishTime: "2 hours ago",
         url: "https://www.youtube.com/watch?v=93bI927as_U",
@@ -76,7 +76,7 @@ const Videos = () => {
       video: {
         title: "آموزش ساخت بات دیسکورد | Discord.JS Tutorial",
         thumbnail:
-          "https://i.ytimg.com/vi/93bI927as_U/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI7CNGy2Lcx6mWczKqI9NrotMWXw",
+          "https://cdn.discordapp.com/attachments/832316191309430835/890923510665465876/s.png",
         views: "1K",
         publishTime: "2 hours ago",
         url: "https://www.youtube.com/watch?v=93bI927as_U",
