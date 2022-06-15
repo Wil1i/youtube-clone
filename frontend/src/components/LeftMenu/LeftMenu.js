@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./LeftMenu.module.css";
 import videoStyles from "../Videos/Videos.module.css";
 

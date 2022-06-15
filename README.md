@@ -1,11 +1,38 @@
 # YouTube Clone
 
-### YouTube Clone using React.JS coded by Code-Williams.
+## Setup and Run
 
-### It's first React project for me
+### Clone
 
-### For use this, download it and run it using `npm start` (Its in developer mode)
+```bash
+git clone --branch main https://github.com/pourya90091/youtube-clone.git
+```
 
-#### Updates soon... (Going to made all YouTube Front-End)
+### Install Requirements
 
-#### Visit Online : https://youtube-clone-umber-one.vercel.app/ (best performance in 1920 width)
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+npm install
+```
+
+- you need to run `npm install` in `frontend/` folder
+
+### Run
+
+open two terminal tabs and :
+
+- run `npm run watch` in `frontend/` folder
+
+- run `python manage.py runserver` in root folder
+
+open development server at <http://127.0.0.1:8000/>
+
+Done.
+
+## Tips
+
+>**Tip** : might you takes error on Windows. so use Linux for test it.
+---
